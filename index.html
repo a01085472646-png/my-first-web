@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성도현 | 운동과 축구를 사랑하는 나의 이야기</title>
+  <meta name="description" content="운동과 축구를 사랑하는 성도현의 자기소개 웹페이지입니다. 스포츠맨십과 열정으로 가득한 일상을 소개합니다.">
+  <meta name="keywords" content="성도현, 자기소개, 축구, 스포츠, 운동, 포트폴리오">
+  <meta property="og:title" content="성도현 - Passion for Sports & Football">
+  <meta property="og:description" content="운동과 축구를 사랑하는 성도현의 인터랙티브 자기소개 페이지에 오신 것을 환영합니다!">
+  
+  <!-- Fonts: Pretendard & Outfit -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow Effects -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" id="brand-logo">
+        <span class="brand-ball">⚽</span>
+        <span class="brand-text">DOHYUN<span class="dot">.</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active" id="nav-link-hero">홈</a>
+        <a href="#about" class="nav-link" id="nav-link-about">소개</a>
+        <a href="#football" class="nav-link" id="nav-link-football">축구 & 스포츠</a>
+        <a href="#routine" class="nav-link" id="nav-link-routine">운동 루틴</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="테마 전환" title="다크/라이트 모드 전환">
+          <i class="fa-solid fa-moon icon-moon"></i>
+          <i class="fa-solid fa-sun icon-sun"></i>
+        </button>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="메뉴 열기">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-indicator"></span>
+            <span>🏃‍♂️ Sports & Football Enthusiast</span>
+          </div>
+
+          <h1 class="hero-title">
+            안녕하세요,<br>
+            그라운드의 열정을 담는<br>
+            <span class="gradient-text">성도현</span>입니다.
+          </h1>
+
+          <p class="hero-description">
+            끝까지 달리는 끈기와 팀을 생각하는 패스 플레이처럼,<br class="hide-mobile">
+            언제나 긍정적인 에너지와 활력으로 목표를 향해 달려갑니다.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#football" class="btn btn-primary" id="btn-explore-football">
+              <span>축구 이야기 보기</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#routine" class="btn btn-secondary" id="btn-routine">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>운동 루틴 보기</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Banner -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-target="7">0</div>
+              <div class="stat-label">주간 운동 횟수 (회)</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="90">0</div>
+              <div class="stat-label">지치지 않는 풀타임 (분)</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="100">0</div>
+              <div class="stat-label">에너지 & 열정 (%)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="player-card glass-card" id="player-profile-card">
+            <div class="card-badge">NO. 10 PLAYMAKER</div>
+            <div class="avatar-wrapper">
+              <div class="avatar-circle">
+                <i class="fa-solid fa-person-running avatar-icon"></i>
+                <div class="floating-ball">⚽</div>
+              </div>
+            </div>
+            <h2 class="card-name">성도현 (Seong Dohyun)</h2>
+            <p class="card-role">All-round Sports Lover</p>
+            
+            <div class="player-tags">
+              <span class="tag"><i class="fa-solid fa-futbol"></i> 축구/풋살</span>
+              <span class="tag"><i class="fa-solid fa-stopwatch-20"></i> 러닝 10km</span>
+              <span class="tag"><i class="fa-solid fa-dumbbell"></i> 헬스/웨이트</span>
+            </div>
+
+            <div class="player-attributes">
+              <div class="attr-row">
+                <span class="attr-name">지구력 (Stamina)</span>
+                <div class="attr-bar-bg"><div class="attr-bar-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="attr-row">
+                <span class="attr-name">팀워크 (Teamwork)</span>
+                <div class="attr-bar-bg"><div class="attr-bar-fill" style="width: 98%;"></div></div>
+              </div>
+              <div class="attr-row">
+                <span class="attr-name">열정 (Passion)</span>
+                <div class="attr-bar-bg"><div class="attr-bar-fill" style="width: 100%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">ABOUT ME</span>
+          <h2 class="section-title">운동을 통해 배우는 삶의 태도</h2>
+          <p class="section-description">
+            운동은 단순한 취미를 넘어, 저에게 지치지 않는 활력과 사람을 배려하는 마음을 선물해 주었습니다.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <div class="about-icon-box bg-emerald">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>팀워크와 소통</h3>
+            <p>
+              혼자서 승리할 수 있는 경기는 없습니다. 경기장 안팎에서 서로의 움직임을 이해하고 끊임없이 소통하며 최고의 시너지를 발휘하는 법을 배웠습니다.
+            </p>
+            <div class="card-highlight">#소통 #배려 #원팀</div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-icon-box bg-blue">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <h3>끈기와 자기관리</h3>
+            <p>
+              매일 흘리는 땀방울은 거짓말을 하지 않습니다. 규칙적인 운동 루틴과 철저한 자기관리를 통해 한계를 돌파하는 단단한 멘탈과 체력을 키웠습니다.
+            </p>
+            <div class="card-highlight">#꾸준함 #자기주도 #성취감</div>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-icon-box bg-amber">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>페어플레이 정신</h3>
+            <p>
+              어려운 상황에서도 규칙을 존중하고 상대를 인정하는 페어플레이는 저의 가장 큰 신념입니다. 정직하고 당당한 자세로 삶의 매 순간에 임합니다.
+            </p>
+            <div class="card-highlight">#스포츠맨십 #존중 #긍정에너지</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTBALL & SPORTS SECTION -->
+    <section class="section football-section" id="football">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">MY FAVORITE SPORTS</span>
+          <h2 class="section-title">가장 뜨겁게 가슴 뛰는 순간, 축구</h2>
+          <p class="section-description">
+            초록빛 그라운드 위에서 공과 하나 되어 달릴 때 가장 큰 행복을 느낍니다.
+          </p>
+        </div>
+
+        <!-- Interactive Football Pitch & Position Board -->
+        <div class="pitch-container glass-card">
+          <div class="pitch-info">
+            <div class="pitch-info-header">
+              <span class="pitch-badge">⚽ DOHYUN'S TACTICS BOARD</span>
+              <h3>나의 그라운드 선호 포지션</h3>
+              <p>필드 위의 포지션 마커를 클릭하여 플레이 스타일을 확인해보세요!</p>
+            </div>
+            
+            <div class="position-detail-card" id="position-detail-card">
+              <div class="pos-tag" id="pos-tag">MF - 중앙 미드필더 (선호 1위)</div>
+              <h4 id="pos-title">경기를 조율하는 미드필더 (Playmaker)</h4>
+              <p id="pos-desc">
+                넓은 시야와 왕성한 활동량으로 공수를 잇는 핵심 가교 역할을 좋아합니다. 동료의 빈 공간을 찾아 찔러주는 정교한 패스에서 가장 큰 희열을 느낍니다.
+              </p>
+              <div class="pos-stats">
+                <div class="pos-stat-pill"><i class="fa-solid fa-compass"></i> 넓은 시야</div>
+                <div class="pos-stat-pill"><i class="fa-solid fa-arrows-split-up-and-left"></i> 전진 패스</div>
+                <div class="pos-stat-pill"><i class="fa-solid fa-heart-pulse"></i> 왕성한 체력</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pitch-board" id="pitch-board">
+            <div class="pitch-lines">
+              <div class="pitch-center-circle"></div>
+              <div class="pitch-center-line"></div>
+              <div class="pitch-penalty-box pitch-penalty-top"></div>
+              <div class="pitch-penalty-box pitch-penalty-bottom"></div>
+            </div>
+
+            <!-- Position Markers on Pitch -->
+            <button class="pos-marker active" id="pos-cm" data-position="cm" style="top: 48%; left: 50%;">
+              <span class="marker-dot"></span>
+              <span class="marker-label">MF 도현</span>
+            </button>
+            <button class="pos-marker" id="pos-lw" data-position="lw" style="top: 25%; left: 24%;">
+              <span class="marker-dot"></span>
+              <span class="marker-label">LW 윙어</span>
+            </button>
+            <button class="pos-marker" id="pos-cf" data-position="cf" style="top: 18%; left: 50%;">
+              <span class="marker-dot"></span>
+              <span class="marker-label">FW 공격수</span>
+            </button>
+            <button class="pos-marker" id="pos-cb" data-position="cb" style="top: 75%; left: 50%;">
+              <span class="marker-dot"></span>
+              <span class="marker-label">DF 수비수</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mini Interactive Kick Game Widget -->
+        <div class="mini-game-wrapper glass-card">
+          <div class="game-header">
+            <div class="game-title">
+              <span class="game-icon">🎯</span>
+              <h4>미니 승부차기: 성도현에게 슛 날리기!</h4>
+            </div>
+            <div class="game-score">
+              골 성공: <span id="goal-count" class="score-value">0</span>골
+            </div>
+          </div>
+          <p class="game-instruction">골키퍼 장갑을 피해 골대 구석을 클릭하여 멋진 골을 성공시켜보세요!</p>
+
+          <div class="penalty-arena" id="penalty-arena">
+            <!-- Goal Post -->
+            <div class="goal-frame">
+              <div class="goal-net"></div>
+              <!-- Keeper -->
+              <div class="goalkeeper" id="goalkeeper">
+                <i class="fa-solid fa-mitten keeper-glove"></i>
+              </div>
+              <!-- Target zones -->
+              <div class="target-zone" data-target="top-left" id="target-tl" title="왼쪽 상단 구석"></div>
+              <div class="target-zone" data-target="top-right" id="target-tr" title="오른쪽 상단 구석"></div>
+              <div class="target-zone" data-target="bottom-left" id="target-bl" title="왼쪽 하단"></div>
+              <div class="target-zone" data-target="bottom-right" id="target-br" title="오른쪽 하단"></div>
+            </div>
+
+            <!-- Football -->
+            <div class="interactive-ball" id="interactive-ball">⚽</div>
+            <div class="game-feedback" id="game-feedback">슛할 위치를 선택하세요!</div>
+          </div>
+        </div>
+
+        <!-- Other Sports Grid -->
+        <div class="sports-cards-grid">
+          <div class="sport-card glass-card">
+            <div class="sport-card-top">
+              <span class="sport-emoji">⚽</span>
+              <span class="sport-frequency">주 2~3회</span>
+            </div>
+            <h3>풋살 & 조기축구</h3>
+            <p>
+              순간적인 판단과 빠른 템포가 매력적인 풋살과 잔디 구장에서 호흡을 맞추는 축구 경기를 즐깁니다.
+            </p>
+          </div>
+
+          <div class="sport-card glass-card">
+            <div class="sport-card-top">
+              <span class="sport-emoji">🏃</span>
+              <span class="sport-frequency">주 3회 (5~10km)</span>
+            </div>
+            <h3>나이트 & 모닝 러닝</h3>
+            <p>
+              선선한 바람을 맞으며 페이스를 조절하고 머릿속을 맑게 비우는 힐링 러닝 타임입니다.
+            </p>
+          </div>
+
+          <div class="sport-card glass-card">
+            <div class="sport-card-top">
+              <span class="sport-emoji">🏋️</span>
+              <span class="sport-frequency">주 4회 루틴</span>
+            </div>
+            <h3>피트니스 & 웨이트</h3>
+            <p>
+              부상 없는 플레이를 위한 코어 훈련 및 전신 밸런스를 잡는 든든한 웨이트 트레이닝.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROUTINE SECTION -->
+    <section class="section routine-section" id="routine">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">WEEKLY ROUTINE</span>
+          <h2 class="section-title">성도현의 건강한 일주일</h2>
+          <p class="section-description">
+            규칙적인 운동이 만드는 건강한 몸과 긍정적인 일상 습관입니다.
+          </p>
+        </div>
+
+        <div class="routine-timeline">
+          <div class="timeline-item">
+            <div class="timeline-day">MON</div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-icon"><i class="fa-solid fa-person-running"></i></div>
+              <div class="timeline-content">
+                <h4>가벼운 조깅 & 하체 코어</h4>
+                <p>한 주의 시작을 활기차게 여는 5km 조깅 및 코어 보강 운동</p>
+                <span class="badge">45분 소요</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-day">WED</div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-icon"><i class="fa-solid fa-dumbbell"></i></div>
+              <div class="timeline-content">
+                <h4>상체 웨이트 & 밸런스</h4>
+                <p>몸싸움과 자세 유지를 위한 상체 근력 및 모빌리티 스트레칭</p>
+                <span class="badge">60분 소요</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item highlight-day">
+            <div class="timeline-day">FRI</div>
+            <div class="timeline-card glass-card match-card">
+              <div class="timeline-icon"><i class="fa-solid fa-futbol"></i></div>
+              <div class="timeline-content">
+                <h4>불금 야간 풋살 매치 🔥</h4>
+                <p>동호회 팀원들과 함께 즐기는 박진감 넘치는 실전 경기</p>
+                <span class="badge badge-accent">120분 풀경기</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-day">SUN</div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-icon"><i class="fa-solid fa-spa"></i></div>
+              <div class="timeline-content">
+                <h4>폼롤러 리커버리 & 산책</h4>
+                <p>다음 주를 위한 근육 이완, 폼롤러 마사지 및 자연 산책</p>
+                <span class="badge">힐링 & 회복</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="footer-logo">
+          <span>⚽ DOHYUN SEONG</span>
+        </a>
+        <p class="footer-tagline">건강한 땀방울과 스포츠의 즐거움을 함께 나눕니다.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">처음으로</a>
+        <a href="#about">소개</a>
+        <a href="#football">축구/스포츠</a>
+        <a href="#routine">루틴</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 성도현 (Seong Dohyun). All rights reserved.</p>
+        <p class="footer-sub">Designed & Built with passion for football & sports</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Floating Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="맨 위로 가기">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
